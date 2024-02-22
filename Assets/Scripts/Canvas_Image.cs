@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Canvas_Image : MonoBehaviour
 {
-    Texture Image;
+    Material Image;
 
     // Start is called before the first frame update
     void Start()
     {
-        //Image = Default;
+        Image = GetComponent<Material>();
     }
 
     // Update is called once per frame
