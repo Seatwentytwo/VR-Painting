@@ -158,8 +158,8 @@ Transform:
   - {fileID: 332462309}
   - {fileID: 265989636}
   - {fileID: 1888205850}
-  - {fileID: 511497983}
   - {fileID: 1574447582}
+  - {fileID: 511497983}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &148299152
@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 265989637}
   m_Layer: 0
   m_Name: Pot_Cyan
-  m_TagString: Untagged
+  m_TagString: Cyan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -508,7 +508,7 @@ GameObject:
   - component: {fileID: 332462310}
   m_Layer: 0
   m_Name: Pot_Yellow
-  m_TagString: Untagged
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -792,7 +792,7 @@ GameObject:
   - component: {fileID: 483721528}
   m_Layer: 0
   m_Name: Pot_Red
-  m_TagString: Untagged
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -899,7 +899,7 @@ GameObject:
   - component: {fileID: 511497984}
   m_Layer: 0
   m_Name: Pot_Thinner
-  m_TagString: Untagged
+  m_TagString: Thinner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1112,7 +1112,7 @@ GameObject:
   - component: {fileID: 1185224025}
   m_Layer: 0
   m_Name: Pot_Blue
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1437,7 +1437,7 @@ GameObject:
   - component: {fileID: 1574447583}
   m_Layer: 0
   m_Name: Pot_Orange
-  m_TagString: Untagged
+  m_TagString: Orange
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1649,7 +1649,7 @@ GameObject:
   - component: {fileID: 1810040648}
   m_Layer: 0
   m_Name: Pot_Green
-  m_TagString: Untagged
+  m_TagString: Green
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1756,7 +1756,7 @@ GameObject:
   - component: {fileID: 1888205851}
   m_Layer: 0
   m_Name: Pot_Pink
-  m_TagString: Untagged
+  m_TagString: Pink
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
