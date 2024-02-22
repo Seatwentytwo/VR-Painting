@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    AudioSource Ticking;
+    public float timeRemaining = 10;
+    public bool timerIsRunning = false;
+
+    private void Start()
     {
-        
+        Ticking = GetComponent<AudioSource>();
+        timerIsRunning = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (timerIsRunning)
+        {
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+            }
+            else
+            {
+                Debug.Log("Time has run out!");
+                timeRemaining = 0;
+                timerIsRunning = false;
+            }
+        }
     }
 }
