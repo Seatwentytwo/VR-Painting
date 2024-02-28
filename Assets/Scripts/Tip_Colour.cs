@@ -4,35 +4,70 @@ using UnityEngine;
 
 public class Tip_Color : MonoBehaviour
 {
-    bool blue;
-    bool red;
-    bool green;
-    bool yellow;
-    bool cyan;
-    bool pink;
-    bool orange;
-    bool thinner;
+    //Material[Blue, Red, Green, Cyan, Pink, Orange, Thinner] Colours;
 
-    Material Tip;
+    /*
+    public Material Blue;
+    public Material Red;
+    public Material Green;
+    public Material Cyan;
+    public Material Pink;
+    public Material Yellow;
+    public Material Orange;
+    public Material Thinner;
+    */
 
-    // Start is called before the first frame update
-    void Start()
+    Material currentColour;
+
+    Color32 orange = new Color32(255, 128, 0, 255);
+    Color32 thinner = new Color32(255, 255, 255, 0);
+
+    private void Start()
     {
-        blue = false;
-        red = false;
-        green = false;
-        yellow = false;
-        cyan = false;
-        pink = false;
-        orange = false;
-        thinner = false;
-
-        //Tip = red;
+        currentColour = GetComponent<Renderer>().material;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.gameObject.tag == "Red")
+        {
+            currentColour.color = Color.red;
+        }
+
+        else if (collision.gameObject.tag == "Blue")
+        {
+            currentColour.color = Color.blue;
+        }
+
+        else if (collision.gameObject.tag == "Green")
+        {
+            currentColour.color = Color.green;
+        }
+
+        else if (collision.gameObject.tag == "Yellow")
+        {
+            currentColour.color = Color.yellow;
+        }
+
+        else if (collision.gameObject.tag == "Cyan")
+        {
+            currentColour.color = Color.cyan;
+        }
+
+        else if (collision.gameObject.tag == "Pink")
+        {
+            currentColour.color = Color.magenta;
+        }
+
+        else if (collision.gameObject.tag == "Orange")
+        {
+            currentColour.color = orange;
+        }
+
+        else if (collision.gameObject.tag == "Thinner")
+        {
+            currentColour.color = thinner;
+            thinner.a = 0;
+        }
     }
 }
