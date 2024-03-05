@@ -80,9 +80,13 @@ MonoBehaviour:
     instantiationMode: 0
   - dependency: {fileID: 8841706926471734270, guid: 2fd3e07afe5b461490fb8e314976b1b0, type: 3}
     instantiationMode: 0
+  - dependency: {fileID: 919132149155446097, guid: b815e79be52eb394480eac90978dc366, type: 3}
+    instantiationMode: 0
   - dependency: {fileID: 2100000, guid: 0da9cd7ba07b9a647b4bf16bd32ce27c, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 919132149155446097, guid: 436757056de26e144b330984c539cecd, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 4125421792874400280, guid: 27024f5809f4a4347b9cd7f26a1bdf93, type: 3}
     instantiationMode: 0
