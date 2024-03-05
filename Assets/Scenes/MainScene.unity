@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 15668429}
   - component: {fileID: 15668428}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Submit Podium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -225,7 +225,8 @@ Transform:
   m_LocalPosition: {x: -0.7413, y: 0.35, z: 1.7032}
   m_LocalScale: {x: 0.2774, y: 1, z: 0.3284}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 470639038}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &16775737
@@ -1301,7 +1302,7 @@ GameObject:
   - component: {fileID: 470639036}
   - component: {fileID: 470639035}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Submit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1386,12 +1387,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470639034}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7413, y: 0.87091005, z: 1.7032}
-  m_LocalScale: {x: 0.16, y: 0.06315063, z: 0.189416}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.52091, z: 0}
+  m_LocalScale: {x: 0.57678443, y: 0.06315063, z: 0.57678443}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 15668431}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &483721526
 GameObject:
@@ -4245,4 +4246,3 @@ SceneRoots:
   - {fileID: 537933341}
   - {fileID: 559648843}
   - {fileID: 15668431}
-  - {fileID: 470639038}
