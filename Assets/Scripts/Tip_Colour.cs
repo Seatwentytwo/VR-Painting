@@ -34,9 +34,9 @@ public class Tip_Color : MonoBehaviour
             currentColour.color = Color.red;
         }
 
-        else if (collision.gameObject.tag == "Blue")
+        else if (collision.gameObject.tag == "Black")
         {
-            currentColour.color = Color.blue;
+            currentColour.color = Color.black;
         }
 
         else if (collision.gameObject.tag == "Green")
