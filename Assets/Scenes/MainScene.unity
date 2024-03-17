@@ -1302,10 +1302,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brush
       objectReference: {fileID: 0}
+    - target: {fileID: 5334037119324981776, guid: c177eb6fa8f064648b494837ba550de5, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -5495902117074765545, guid: 7a3069b0345114d4d888e60d28345d2f, type: 3}
     - target: {fileID: 6317578925029434746, guid: c177eb6fa8f064648b494837ba550de5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9c8ddab9ef0cbb24eb3a269a6bc09919, type: 2}
+    - target: {fileID: 7754171746062102885, guid: c177eb6fa8f064648b494837ba550de5, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4711208715938537054, guid: 7a3069b0345114d4d888e60d28345d2f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
