@@ -21,6 +21,7 @@ public class Tip_Color : MonoBehaviour
 
     Color32 orange = new Color32(255, 128, 0, 255);
     Color32 thinner = new Color32(255, 255, 255, 0);
+    Color32 black = new Color32(0, 0, 0, 0);
 
     private void Start()
     {
@@ -36,7 +37,7 @@ public class Tip_Color : MonoBehaviour
 
         else if (collision.gameObject.tag == "Black")
         {
-            currentColour.color = Color.black;
+            currentColour.color = black;
         }
 
         else if (collision.gameObject.tag == "Green")
@@ -49,7 +50,7 @@ public class Tip_Color : MonoBehaviour
             currentColour.color = Color.yellow;
         }
 
-        else if (collision.gameObject.tag == "Cyan")
+        else if (collision.gameObject.tag == "Blue")
         {
             currentColour.color = Color.cyan;
         }
