@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
+    public GameObject EaselSwapper;
+    private EaselSwap EaseScript;
 
     AudioSource Ticking;
     public float timeRemaining = 10;
     public bool timerIsRunning = false;
 
+    bool StartPainting;
+
     private void Start()
     {
         Ticking = GetComponent<AudioSource>();
         timerIsRunning = true;
+
+        EaseScript = GetComponent<EaselSwap>();
     }
 
     void Update()
@@ -29,6 +35,12 @@ public class Timer : MonoBehaviour
                 timeRemaining = 0;
                 timerIsRunning = false;
             }
+        }
+
+        if (StartPainting == true)
+        {
+            timeRemaining = 60;
+            timerIsRunning = true;
         }
     }
 }

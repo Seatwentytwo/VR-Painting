@@ -4,18 +4,27 @@ using UnityEngine;
 
 public class EaselSwap : MonoBehaviour
 {
+    public GameObject Timer;
+    private Timer TimerScript;
+
     public bool IsFirstEasel;
     public bool IsSecondEasel;
     public bool IsThirdEasel;
     public bool IsFourthEasel;
     public bool IsFifthEasel;
+    public bool IsSixthEasel;
+    public bool IsSeventhEasel;
+    public bool IsEighthEasel;
 
     public bool Showcase;
 
-    private bool StartPainting;
-    private bool DonePainting;
+    public bool StartPainting;
+    public bool DonePainting;
+
+    private bool isTimerRunning;
 
     public int TimerElapses;
+    private float timeRemaining;
 
     Animator animator;
 
@@ -27,6 +36,9 @@ public class EaselSwap : MonoBehaviour
         DonePainting = false;
 
         TimerElapses = 0;
+
+        TimerScript = Timer.GetComponent<Timer>();
+        timeRemaining = TimerScript.timeRemaining;
     }
 
     void Update()
@@ -34,32 +46,55 @@ public class EaselSwap : MonoBehaviour
         animator.SetBool("StartPainting", StartPainting);
         animator.SetBool("DonePainting", DonePainting);
 
-        if (IsFirstEasel == true)
+        isTimerRunning = TimerScript.timerIsRunning;
+
+        if (timeRemaining <= 0.00f)
+        {
+            TimerElapses++;
+            DonePainting = true;
+        }
+
+        if (IsFirstEasel == true && DonePainting != true)
         {
             StartPainting = true;
         }
 
-        if (IsSecondEasel == true && TimerElapses == 1)
+        if (IsSecondEasel == true && TimerElapses == 1 && DonePainting != true)
         {
             StartPainting = true;
         }
 
-        if (IsThirdEasel == true && TimerElapses == 2)
+        if (IsThirdEasel == true && TimerElapses == 2 && DonePainting != true)
         {
             StartPainting = true;
         }
 
-        if (IsFourthEasel == true && TimerElapses == 3)
+        if (IsFourthEasel == true && TimerElapses == 3 && DonePainting != true)
         {
             StartPainting = true;
         }
 
-        if (IsFifthEasel == true && TimerElapses == 4)
+        if (IsFifthEasel == true && TimerElapses == 4 && DonePainting != true)
         {
             StartPainting = true;
         }
 
-        if (TimerElapses == 5)
+        if (IsFifthEasel == true && TimerElapses == 5 && DonePainting != true)
+        {
+            StartPainting = true;
+        }
+
+        if (IsFifthEasel == true && TimerElapses == 6 && DonePainting != true)
+        {
+            StartPainting = true;
+        }
+
+        if (IsFifthEasel == true && TimerElapses == 7 && DonePainting != true) 
+        {
+            StartPainting = true;
+        }
+
+        if (TimerElapses == 8)
         {
             Showcase = true;
         }

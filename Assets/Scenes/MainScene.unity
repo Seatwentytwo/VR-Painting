@@ -1192,7 +1192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &379344874
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1316,7 +1316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9daa25d12ae4e48ad8ad085baeac21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 30
+  timeRemaining: 60
   timerIsRunning: 0
 --- !u!1 &409498938
 GameObject:
@@ -2258,7 +2258,12 @@ MonoBehaviour:
   IsThirdEasel: 0
   IsFourthEasel: 0
   IsFifthEasel: 0
+  IsSixthEasel: 0
+  IsSeventhEasel: 0
+  IsEighthEasel: 0
   Showcase: 0
+  StartPainting: 0
+  DonePainting: 0
   TimerElapses: 0
 --- !u!1 &541812103
 GameObject:
@@ -8251,7 +8256,12 @@ MonoBehaviour:
   IsThirdEasel: 0
   IsFourthEasel: 0
   IsFifthEasel: 0
+  IsSixthEasel: 0
+  IsSeventhEasel: 0
+  IsEighthEasel: 0
   Showcase: 0
+  StartPainting: 0
+  DonePainting: 0
   TimerElapses: 0
 --- !u!65 &7140931310655192723
 BoxCollider:
