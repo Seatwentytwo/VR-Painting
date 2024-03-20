@@ -25,7 +25,7 @@ public class Timer : MonoBehaviour
     {
         if (timerIsRunning)
         {
-            if (timeRemaining > 0)
+            if (timeRemaining > 0 && timerIsRunning == true)
             {
                 timeRemaining -= Time.deltaTime;
             }
@@ -33,8 +33,12 @@ public class Timer : MonoBehaviour
             {
                 Debug.Log("Time has run out!");
                 timerIsRunning = false;
-                timeRemaining = 10;
             }
+        }
+
+        if (timerIsRunning == false)
+        {
+            timeRemaining = 60;
         }
 
         if (StartPainting == true)

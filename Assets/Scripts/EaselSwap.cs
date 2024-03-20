@@ -27,6 +27,8 @@ public class EaselSwap : MonoBehaviour
 
     Animator animator;
 
+    //private IEnumerator PaintingCheck;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -51,7 +53,7 @@ public class EaselSwap : MonoBehaviour
         {
             TimerElapses++;
             DonePainting = true;
-            isTimerRunning = true;
+            PaintingCheck();
         }
 
         if (IsFirstEasel == true && DonePainting != true)
@@ -99,5 +101,16 @@ public class EaselSwap : MonoBehaviour
         {
             Showcase = true;
         }
+    }
+
+    private void TimeElapse()
+    {
+        DonePainting = true;
+    }
+
+    IEnumerator PaintingCheck()
+    {
+        Showcase = false;
+        yield return null;
     }
 }
