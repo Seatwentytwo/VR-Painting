@@ -1316,7 +1316,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9daa25d12ae4e48ad8ad085baeac21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 60
+  EaselSwapper: {fileID: 537933340}
+  timeRemaining: 6
   timerIsRunning: 0
 --- !u!1 &409498938
 GameObject:
@@ -2253,6 +2254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 949bc78d458aee94fba3d35b53f84fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Timer: {fileID: 379344873}
   IsFirstEasel: 1
   IsSecondEasel: 0
   IsThirdEasel: 0
@@ -8251,6 +8253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 949bc78d458aee94fba3d35b53f84fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Timer: {fileID: 379344873}
   IsFirstEasel: 0
   IsSecondEasel: 1
   IsThirdEasel: 0

@@ -24,7 +24,6 @@ public class EaselSwap : MonoBehaviour
     private bool isTimerRunning;
 
     public int TimerElapses;
-    private float timeRemaining;
 
     Animator animator;
 
@@ -38,7 +37,7 @@ public class EaselSwap : MonoBehaviour
         TimerElapses = 0;
 
         TimerScript = Timer.GetComponent<Timer>();
-        timeRemaining = TimerScript.timeRemaining;
+        isTimerRunning = TimerScript.timerIsRunning;
     }
 
     void Update()
@@ -48,10 +47,11 @@ public class EaselSwap : MonoBehaviour
 
         isTimerRunning = TimerScript.timerIsRunning;
 
-        if (timeRemaining <= 0.00f)
+        if (isTimerRunning == false)
         {
             TimerElapses++;
             DonePainting = true;
+            isTimerRunning = true;
         }
 
         if (IsFirstEasel == true && DonePainting != true)
@@ -62,6 +62,7 @@ public class EaselSwap : MonoBehaviour
         if (IsSecondEasel == true && TimerElapses == 1 && DonePainting != true)
         {
             StartPainting = true;
+
         }
 
         if (IsThirdEasel == true && TimerElapses == 2 && DonePainting != true)
