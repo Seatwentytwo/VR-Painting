@@ -25,26 +25,25 @@ public class Timer : MonoBehaviour
     {
         if (timerIsRunning)
         {
-            if (timeRemaining > 0 && timerIsRunning == true)
+            if (timeRemaining > 0 /*&& timerIsRunning == true*/)
             {
                 timeRemaining -= Time.deltaTime;
+                timerIsRunning = true;
             }
             else
             {
                 Debug.Log("Time has run out!");
                 timerIsRunning = false;
+                StartCoroutine(Cycle());
             }
         }
+    }
 
-        if (timerIsRunning == false)
-        {
-            timeRemaining = 60;
-        }
-
-        if (StartPainting == true)
-        {
-            timeRemaining = 60;
-            timerIsRunning = true;
-        }
+    IEnumerator Cycle()
+    {
+        yield return new WaitForSeconds(2);
+        Debug.Log("Restarting Cyle");
+        timeRemaining = 5;
+        timerIsRunning = true;
     }
 }

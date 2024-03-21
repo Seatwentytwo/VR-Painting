@@ -21,7 +21,9 @@ public class EaselSwap : MonoBehaviour
     public bool StartPainting;
     public bool DonePainting;
 
-    private bool isTimerRunning;
+    [SerializeField] private bool isTimerRunning;
+
+    [SerializeField] private bool StopElapse;
 
     public int TimerElapses;
 
@@ -38,6 +40,8 @@ public class EaselSwap : MonoBehaviour
 
         TimerElapses = 0;
 
+        StopElapse = false;
+
         TimerScript = Timer.GetComponent<Timer>();
         isTimerRunning = TimerScript.timerIsRunning;
     }
@@ -49,11 +53,10 @@ public class EaselSwap : MonoBehaviour
 
         isTimerRunning = TimerScript.timerIsRunning;
 
-        if (isTimerRunning == false)
+
+        if (isTimerRunning == false && StopElapse == false)
         {
-            TimerElapses++;
-            DonePainting = true;
-            PaintingCheck();
+            StartCoroutine(TimeElapse());
         }
 
         if (IsFirstEasel == true && DonePainting != true)
@@ -61,38 +64,39 @@ public class EaselSwap : MonoBehaviour
             StartPainting = true;
         }
 
-        if (IsSecondEasel == true && TimerElapses == 1 && DonePainting != true)
+        if (IsSecondEasel == true && TimerElapses == 1 && DonePainting == true)
         {
             StartPainting = true;
-
+            DonePainting = false;
         }
 
-        if (IsThirdEasel == true && TimerElapses == 2 && DonePainting != true)
+        if (IsThirdEasel == true && TimerElapses == 2 && DonePainting == true)
         {
             StartPainting = true;
+            DonePainting = false;
         }
 
-        if (IsFourthEasel == true && TimerElapses == 3 && DonePainting != true)
-        {
-            StartPainting = true;
-        }
-
-        if (IsFifthEasel == true && TimerElapses == 4 && DonePainting != true)
+        if (IsFourthEasel == true && TimerElapses == 3 && DonePainting == true)
         {
             StartPainting = true;
         }
 
-        if (IsFifthEasel == true && TimerElapses == 5 && DonePainting != true)
+        if (IsFifthEasel == true && TimerElapses == 4 && DonePainting == true)
         {
             StartPainting = true;
         }
 
-        if (IsFifthEasel == true && TimerElapses == 6 && DonePainting != true)
+        if (IsFifthEasel == true && TimerElapses == 5 && DonePainting == true)
         {
             StartPainting = true;
         }
 
-        if (IsFifthEasel == true && TimerElapses == 7 && DonePainting != true) 
+        if (IsFifthEasel == true && TimerElapses == 6 && DonePainting == true)
+        {
+            StartPainting = true;
+        }
+
+        if (IsFifthEasel == true && TimerElapses == 7 && DonePainting == true) 
         {
             StartPainting = true;
         }
@@ -102,15 +106,16 @@ public class EaselSwap : MonoBehaviour
             Showcase = true;
         }
     }
-
-    private void TimeElapse()
-    {
-        DonePainting = true;
-    }
-
-    IEnumerator PaintingCheck()
+    IEnumerator TimeElapse()
     {
         Showcase = false;
-        yield return null;
+        StartPainting = false;
+        DonePainting = true;
+        TimerElapses++;
+        StopElapse = true;
+
+        yield return new WaitForSeconds(5);
+
+        StopElapse = false;
     }
 }
