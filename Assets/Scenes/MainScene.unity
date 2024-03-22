@@ -8744,6 +8744,7 @@ GameObject:
   - component: {fileID: 1220724159}
   - component: {fileID: 1220724158}
   - component: {fileID: 1220724157}
+  - component: {fileID: 1220724160}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -8838,6 +8839,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220724155}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1220724160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220724155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7519513720b829d44a4b9fad36ba2877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Intro: {fileID: 0}
+  Tree: {fileID: 0}
+  Eye: {fileID: 0}
+  Bell: {fileID: 0}
+  Pizza: {fileID: 0}
+  Easel: {fileID: 0}
+  Triangle: {fileID: 0}
+  Moon: {fileID: 0}
+  End: {fileID: 0}
+  ElapseEasel: {fileID: 595278109}
 --- !u!1 &1249617917
 GameObject:
   m_ObjectHideFlags: 0
@@ -13731,6 +13754,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7519513720b829d44a4b9fad36ba2877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Intro: {fileID: 0}
+  Tree: {fileID: 0}
+  Eye: {fileID: 0}
+  Bell: {fileID: 0}
+  Pizza: {fileID: 0}
+  Easel: {fileID: 0}
+  Triangle: {fileID: 0}
+  Moon: {fileID: 0}
+  End: {fileID: 0}
+  ElapseEasel: {fileID: 0}
 --- !u!1 &1966527359
 GameObject:
   m_ObjectHideFlags: 0
