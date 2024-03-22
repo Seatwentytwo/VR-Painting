@@ -46,7 +46,7 @@ public class EaselSwap : MonoBehaviour
         isTimerRunning = TimerScript.timerIsRunning;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         animator.SetBool("StartPainting", StartPainting);
         animator.SetBool("DonePainting", DonePainting);

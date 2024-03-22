@@ -21,7 +21,7 @@ public class Timer : MonoBehaviour
         EaseScript = GetComponent<EaselSwap>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (timerIsRunning)
         {
@@ -43,7 +43,7 @@ public class Timer : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         Debug.Log("Restarting Cyle");
-        timeRemaining = 4;
+        timeRemaining = 90;
         timerIsRunning = true;
     }
 }

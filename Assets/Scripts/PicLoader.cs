@@ -76,5 +76,10 @@ public class PicLoader : MonoBehaviour
         {
             myMaterial.mainTexture = End;
         }
+
+        if (TimerElapsed == 9)
+        {
+            Application.Quit();
+        }
     }
 }
