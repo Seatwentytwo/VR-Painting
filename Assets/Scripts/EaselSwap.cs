@@ -50,6 +50,17 @@ public class EaselSwap : MonoBehaviour
     {
         animator.SetBool("StartPainting", StartPainting);
         animator.SetBool("DonePainting", DonePainting);
+        animator.SetBool("Showcase", Showcase);
+
+        animator.SetBool("IsFirstEasel", IsFirstEasel);
+        animator.SetBool("IsSecondEasel", IsSecondEasel);
+        animator.SetBool("IsThirdEasel", IsThirdEasel);
+        animator.SetBool("IsFourthEasel", IsFourthEasel);
+        animator.SetBool("IsFifthEasel", IsFifthEasel);
+        animator.SetBool("IsSixthEasel", IsSixthEasel);
+        animator.SetBool("IsSeventhEasel", IsSeventhEasel);
+        animator.SetBool("IsEighthEasel", IsEighthEasel);
+
 
         isTimerRunning = TimerScript.timerIsRunning;
 
@@ -79,32 +90,39 @@ public class EaselSwap : MonoBehaviour
         if (IsFourthEasel == true && TimerElapses == 3 && DonePainting == true)
         {
             StartPainting = true;
+            DonePainting = false;
         }
 
         if (IsFifthEasel == true && TimerElapses == 4 && DonePainting == true)
         {
             StartPainting = true;
+            DonePainting = false;
         }
 
-        if (IsFifthEasel == true && TimerElapses == 5 && DonePainting == true)
+        if (IsSixthEasel == true && TimerElapses == 5 && DonePainting == true)
         {
             StartPainting = true;
+            DonePainting = false;
         }
 
-        if (IsFifthEasel == true && TimerElapses == 6 && DonePainting == true)
+        if (IsSeventhEasel == true && TimerElapses == 6 && DonePainting == true)
         {
             StartPainting = true;
+            DonePainting = false;
         }
 
-        if (IsFifthEasel == true && TimerElapses == 7 && DonePainting == true) 
+        if (IsEighthEasel == true && TimerElapses == 7 && DonePainting == true) 
         {
             StartPainting = true;
+            DonePainting = false;
         }
 
-        if (TimerElapses == 8)
+        if (TimerElapses >= 8)
         {
             Showcase = true;
         }
+
+       
     }
     IEnumerator TimeElapse()
     {

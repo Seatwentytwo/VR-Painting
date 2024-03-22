@@ -43,7 +43,7 @@ public class Timer : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         Debug.Log("Restarting Cyle");
-        timeRemaining = 60;
+        timeRemaining = 4;
         timerIsRunning = true;
     }
 }
