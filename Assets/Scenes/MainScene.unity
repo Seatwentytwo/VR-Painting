@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18306574, g: 0.22874251, b: 0.30669183, a: 1}
+  m_IndirectSpecularColor: {r: 0.18306622, g: 0.2287434, b: 0.30669293, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -440,10 +440,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75a32e29711cd77428adecc8c3f2e635, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1220724156}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5162820104835090806, guid: 75a32e29711cd77428adecc8c3f2e635, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1957208899}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75a32e29711cd77428adecc8c3f2e635, type: 3}
 --- !u!4 &59011209 stripped
 Transform:
@@ -2298,7 +2295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EaselSwapper: {fileID: 537933340}
-  timeRemaining: 120
+  timeRemaining: 5
   timerIsRunning: 0
 --- !u!1 &409498938
 GameObject:
@@ -8857,10 +8854,12 @@ MonoBehaviour:
   Bell: {fileID: 2800000, guid: 3fffe5335b7411a41841e420fe65bb5d, type: 3}
   Pizza: {fileID: 2800000, guid: cdcaee502d3480c4785b2410e1b624e7, type: 3}
   Easel: {fileID: 2800000, guid: 3d72e384af4aa654badc48731efa731a, type: 3}
-  Triangle: {fileID: 0}
+  Triangle: {fileID: 2800000, guid: 173c90da7dce44f4baa0da26b167d5e6, type: 3}
   Moon: {fileID: 2800000, guid: 1032f07f8acb2814e81f758ceff40f04, type: 3}
   End: {fileID: 2800000, guid: 03016ed9080315a4586a8e10ed5f778f, type: 3}
   ElapseEasel: {fileID: 595278109}
+  myMaterial: {fileID: 2100000, guid: 9f9abf7a53e73b9418daa0e82f14ee5b, type: 2}
+  TimerElapsed: 0
 --- !u!1 &1249617917
 GameObject:
   m_ObjectHideFlags: 0
@@ -13737,33 +13736,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943262174}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1957208895 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5162820104835090806, guid: 75a32e29711cd77428adecc8c3f2e635, type: 3}
-  m_PrefabInstance: {fileID: 59011208}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1957208899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957208895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7519513720b829d44a4b9fad36ba2877, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Intro: {fileID: 0}
-  Tree: {fileID: 0}
-  Eye: {fileID: 0}
-  Bell: {fileID: 0}
-  Pizza: {fileID: 0}
-  Easel: {fileID: 0}
-  Triangle: {fileID: 0}
-  Moon: {fileID: 0}
-  End: {fileID: 0}
-  ElapseEasel: {fileID: 0}
 --- !u!1 &1966527359
 GameObject:
   m_ObjectHideFlags: 0

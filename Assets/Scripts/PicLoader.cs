@@ -16,13 +16,15 @@ public class PicLoader : MonoBehaviour
 
     public GameObject ElapseEasel;
 
+    public Material myMaterial;
+
     private EaselSwap ElapseScript;
     public int TimerElapsed;
 
     // Start is called before the first frame update
     void Start()
     {
-        ElapseScript = GetComponent<EaselSwap>();
+        ElapseScript = ElapseEasel.GetComponent<EaselSwap>();
     }
 
     // Update is called once per frame
@@ -32,47 +34,47 @@ public class PicLoader : MonoBehaviour
 
         if (TimerElapsed == 0)
         {
-            Intro.Apply();
+            myMaterial.mainTexture = Intro;
         }
 
         if (TimerElapsed == 1)
         {
-            Tree.Apply();
+            myMaterial.mainTexture = Tree;
         }
 
         if (TimerElapsed == 2)
         {
-            Eye.Apply();
+            myMaterial.mainTexture = Eye;
         }
 
         if (TimerElapsed == 3)
         {
-            Bell.Apply();
+            myMaterial.mainTexture = Bell;
         }
 
         if (TimerElapsed == 4)
         {
-            Pizza.Apply();
+            myMaterial.mainTexture = Pizza;
         }
 
         if (TimerElapsed == 5)
         {
-            Easel.Apply();
+            myMaterial.mainTexture = Easel;
         }
 
         if (TimerElapsed == 6)
         {
-            Triangle.Apply();
+            myMaterial.mainTexture = Triangle;
         }
 
         if (TimerElapsed == 7)
         {
-            Moon.Apply();
+            myMaterial.mainTexture = Moon;
         }
 
         if (TimerElapsed == 8)
         {
-            End.Apply();
+            myMaterial.mainTexture = End;
         }
     }
 }
