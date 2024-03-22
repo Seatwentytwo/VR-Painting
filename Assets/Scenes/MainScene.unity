@@ -8851,15 +8851,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7519513720b829d44a4b9fad36ba2877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Intro: {fileID: 0}
-  Tree: {fileID: 0}
-  Eye: {fileID: 0}
-  Bell: {fileID: 0}
-  Pizza: {fileID: 0}
-  Easel: {fileID: 0}
+  Intro: {fileID: 2800000, guid: 4804e644323d2b942a80e08f731e74d6, type: 3}
+  Tree: {fileID: 2800000, guid: 172bde28fa6017040bfa441f36e49e54, type: 3}
+  Eye: {fileID: 2800000, guid: 3d2e71232ade65541978d3ace268867e, type: 3}
+  Bell: {fileID: 2800000, guid: 3fffe5335b7411a41841e420fe65bb5d, type: 3}
+  Pizza: {fileID: 2800000, guid: cdcaee502d3480c4785b2410e1b624e7, type: 3}
+  Easel: {fileID: 2800000, guid: 3d72e384af4aa654badc48731efa731a, type: 3}
   Triangle: {fileID: 0}
-  Moon: {fileID: 0}
-  End: {fileID: 0}
+  Moon: {fileID: 2800000, guid: 1032f07f8acb2814e81f758ceff40f04, type: 3}
+  End: {fileID: 2800000, guid: 03016ed9080315a4586a8e10ed5f778f, type: 3}
   ElapseEasel: {fileID: 595278109}
 --- !u!1 &1249617917
 GameObject:

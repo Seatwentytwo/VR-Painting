@@ -17,7 +17,7 @@ public class PicLoader : MonoBehaviour
     public GameObject ElapseEasel;
 
     private EaselSwap ElapseScript;
-    private int TimerElapsed;
+    public int TimerElapsed;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +32,47 @@ public class PicLoader : MonoBehaviour
 
         if (TimerElapsed == 0)
         {
-            //Intro;
+            Intro.Apply();
+        }
+
+        if (TimerElapsed == 1)
+        {
+            Tree.Apply();
+        }
+
+        if (TimerElapsed == 2)
+        {
+            Eye.Apply();
+        }
+
+        if (TimerElapsed == 3)
+        {
+            Bell.Apply();
+        }
+
+        if (TimerElapsed == 4)
+        {
+            Pizza.Apply();
+        }
+
+        if (TimerElapsed == 5)
+        {
+            Easel.Apply();
+        }
+
+        if (TimerElapsed == 6)
+        {
+            Triangle.Apply();
+        }
+
+        if (TimerElapsed == 7)
+        {
+            Moon.Apply();
+        }
+
+        if (TimerElapsed == 8)
+        {
+            End.Apply();
         }
     }
 }
