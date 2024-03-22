@@ -2282,7 +2282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EaselSwapper: {fileID: 537933340}
-  timeRemaining: 6
+  timeRemaining: 120
   timerIsRunning: 0
 --- !u!1 &409498938
 GameObject:
